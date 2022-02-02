@@ -61,7 +61,7 @@
 									background-color: rgba(49, 52, 62, 0.07);
 								}
 								&.has_child{
-									background: url('./images/icons/has__child.svg') right 10px center no-repeat ;
+									background: url('/images/icons/has__child.svg') right 10px center no-repeat ;
 									&:hover{
 										background-color: rgba(49, 52, 62, 0.07);
 									}
@@ -121,7 +121,7 @@
 					flex: 1 0 auto;
 				}
 				input[type="submit"]{
-					background: url('./images/icons/search-white.svg') center center no-repeat #80D0AD;
+					background: url('/images/icons/search-white.svg') center center no-repeat #80D0AD;
 					border: none;
 					width: 34px;
 					height: 34px;
