@@ -1,0 +1,232 @@
+.header{
+	padding: 10px 0;
+	position: relative;
+	.inner{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: 10px 30px;
+		.logo{
+			grid-column: span 2 / auto;
+			a{
+				display: block;
+				line-height: 0;
+			}
+		}
+		.menu{
+			grid-column:  span 8 / auto;
+			ul{
+				display: flex;
+				align-items: center;
+				height: 100%;
+				grid-gap: 50px;
+				justify-content: center;
+				li{
+					a{
+						font-size: 16px;
+						&.active{
+							color: #80D0AD;
+						}
+					}
+				}
+			}
+			.submenu{
+				position: absolute;
+				background-color: #fff;
+				display: block;
+				left: 0;
+				top: 100%;
+				width: 100%;
+				box-shadow: 0px 5px 5px rgba(167, 179, 186, 0.3);
+				z-index: 1;
+				display: none;
+				.empty{
+					grid-column:  span 2 / auto;
+				}
+				.menu{
+					display: flex;
+					grid-gap: 15px;
+					padding: 30px 0;
+					ul{
+						display: block;
+						max-width: 230px;
+						width: 100%;
+						li{
+							position: relative;
+							margin-bottom: 5px;
+							a{
+								display: block;
+								border-radius: 5px;
+								padding: 10px 20px;
+								&:hover{
+									background-color: rgba(49, 52, 62, 0.07);
+								}
+								&.has_child{
+									background: url('/images/icons/has__child.svg') right 10px center no-repeat ;
+									&:hover{
+										background-color: rgba(49, 52, 62, 0.07);
+									}
+								}
+							}
+						}
+						&.lvl_3{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.tools{
+			grid-column: 2 span / auto;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			grid-gap: 20px;
+			height: 100%;
+			animation-fill-mode: initial;
+			.busket{
+				display: flex;
+				align-items: center;
+				.count{
+					width: 18px;
+					height: 18px;
+					overflow: hidden;
+					border-radius: 50%;
+					color: #fff;
+					background: #31343E;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 16px;
+					text-align: center;
+					margin-left: 5px;
+				}
+			}
+		}
+		.search{
+			display: none;
+			grid-column:  span 12 / auto;
+			background: rgba(49, 52, 62, 0.05);
+			border-radius: 5px;
+			height: 42px;
+			padding: 4px;
+			form{
+				height: 100%;
+				display: flex;
+				justify-content: space-between;
+				input[type="text"]{
+					border: none;
+					background-color: transparent;
+					padding: 0 11px;
+					height: 100%;
+					outline: none;
+					flex: 1 0 auto;
+				}
+				input[type="submit"]{
+					background: url('/images/icons/search-white.svg') center center no-repeat #80D0AD;
+					border: none;
+					width: 34px;
+					height: 34px;
+					border-radius: 4px;
+					cursor: pointer;
+					&:hover{
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+		.hamburger__menu{
+			position: relative;
+			z-index: 10;
+			display: none;
+			.visuallyHidden {
+				position: absolute; 
+				overflow: hidden; 
+				clip: rect(0 0 0 0); 
+				height: 1px; width: 1px; 
+				margin: -1px; padding: 0; border: 0; 
+			}
+			.hamburger {
+				width: 22px;
+				height: 14px;
+				position: relative;
+			}
+			.hamburger .bar {
+				padding: 0;
+				width: 22px;
+				height: 2px;
+				background-color: #31343E;
+				display: block;
+				transition: all 0.4s ease-in-out;
+				position: absolute; 
+			}
+			.bar1 {
+				top: 0;
+			}
+			.bar2,
+			.bar3 {
+				top: 6px;
+			}
+			.bar3 {
+				right: 0;
+			}
+			.bar4 {
+				bottom: 0;
+			}
+			.hamburger4 .bar4 {
+				top: 6px;
+			}
+			.hamburger4 .bar5 {
+				bottom: 0px;
+			}
+			.hamburger4 .bar {
+				transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+			}
+			.hamburger4 .bar2 {
+				width: 1px;
+				transform: rotate(90deg);
+				left: 11px;
+			}
+			.hamburger4 .bar3 {
+				width: 1px;
+				left: 11px;
+			}
+			.checkbox4:checked + label > .hamburger4 > .bar1{
+				top: 6px;
+				background-color: transparent;
+			}
+			.checkbox4:checked + label > .hamburger4 > .bar2{
+				left: 0px;
+				width: 24px;
+				transform: rotate(45deg);
+			}
+			.checkbox4:checked + label > .hamburger4 > .bar3{
+				left: 0;
+				width: 24px;
+				transform: rotate(-45deg);
+			}
+			.checkbox4:checked + label > .hamburger4 > .bar4{
+				background-color: transparent;
+			}
+			.checkbox4:checked + label > .hamburger4 > .bar5{
+				bottom: 6px;
+				background-color: transparent; 
+			}
+		}
+	}
+	@media (max-width: 992px) {
+		.inner{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			.search{
+				width: 100%;
+			}
+			.menu{
+				display: none;
+			}
+			.hamburger__menu{
+				display: block;
+			}
+		}
+	}
+}

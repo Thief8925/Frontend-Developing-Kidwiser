@@ -1,0 +1,12 @@
+.pre-loader {
+	background-color: #31343E;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 9999999999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

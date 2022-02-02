@@ -1,0 +1,31 @@
+input{
+	display: block;
+	border-radius: 5px;
+	height: 48px;
+}
+input[type="submit"]{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+select{
+	background-color:#fff;
+	height: 48px;
+	padding: 0 14px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #31343E;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
