@@ -818,7 +818,7 @@ a, button, input {
 }
 
 .intro__bnr {
-  background: url("/images/backgrounds/intro__bnr.svg") 0 0 no-repeat;
+  background: url("../images/backgrounds/intro__bnr.svg") 0 0 no-repeat;
   background-size: cover;
   padding: 5px;
   border-radius: 5px;
@@ -912,13 +912,13 @@ a, button, input {
 }
 
 .search__section .form .field select {
-  background: url("/images/icons/select.svg") right 20px center no-repeat #fff;
+  background: url("../images/icons/select.svg") right 20px center no-repeat #fff;
   width: 260px;
 }
 
 .search__section .form input[type="submit"] {
   width: 160px;
-  background: url("/images/icons/gift.svg") left 44px center no-repeat #80D0AD;
+  background: url("../images/icons/gift.svg") left 44px center no-repeat #80D0AD;
   font-size: 16px;
   line-height: 1.4;
   color: #FFFFFF;
@@ -995,7 +995,7 @@ a, button, input {
     width: 100%;
   }
   .search__section .form input[type="submit"] {
-    background: url("/images/icons/gift.svg") left 46% center no-repeat #80D0AD;
+    background: url("../images/icons/gift.svg") left 46% center no-repeat #80D0AD;
     padding-left: 40px;
     width: 100%;
     font-size: 14px;
@@ -1004,7 +1004,7 @@ a, button, input {
 
 @media (max-width: 576px) {
   .search__section .form input[type="submit"] {
-    background: url("/images/icons/gift.svg") left 43% center no-repeat #80D0AD;
+    background: url("../images/icons/gift.svg") left 43% center no-repeat #80D0AD;
   }
 }
 
