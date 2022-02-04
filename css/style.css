@@ -571,7 +571,7 @@ a, button, input {
 }
 
 .header .inner .menu .submenu .menu ul li a.has_child {
-  background: url("/images/icons/has__child.svg") right 10px center no-repeat;
+  background: url("../images/icons/has__child.svg") right 10px center no-repeat;
 }
 
 .header .inner .menu .submenu .menu ul li a.has_child:hover {
@@ -653,7 +653,7 @@ a, button, input {
 }
 
 .header .inner .search form input[type="submit"] {
-  background: url("/images/icons/search-white.svg") center center no-repeat #80D0AD;
+  background: url("../images/icons/search-white.svg") center center no-repeat #80D0AD;
   border: none;
   width: 34px;
   height: 34px;
