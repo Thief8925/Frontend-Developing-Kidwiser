@@ -399,3 +399,231 @@
 		}
 	}
 }
+.breadcrumb{
+	margin: 20px auto 10px;
+	font-size: 12px;
+	line-height: 1.4;
+	color: rgba(49, 52, 62, 0.3);
+	a,i{
+		margin-right: 10px;
+	}
+	span{
+		color: #31343E;
+	}
+}
+.catalog__title{
+	background: rgba(49, 52, 62, 0.07);
+	padding: 25px 15px;
+	margin: 10px auto 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.4;
+	text-align: center;
+	color: #31343E;
+}
+.catalog__subtitle{
+	margin: 30px auto 50px;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+	color: #31343E;
+}
+.catalog__topbar{
+	margin: 50px auto 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	.topbar__filter{
+		position: relative;
+		.filter__section{
+			display: none;
+			background: #F1F1F1;
+			border-radius: 0px 5px 5px 5px;
+			padding: 30px 20px 20px;
+			position: absolute;
+			left: 0;
+			z-index: 1;
+			width: clamp( 290px, 60vw, 825px);
+		}
+		.filter__section-inner{
+			display: flex;
+			flex-wrap: wrap;
+			.checkbox__group{
+				width: 170px;
+				padding-right: 15px;
+				flex: 1 0 auto;
+				.title{
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 1.4;
+					color: #31343E;
+					margin-bottom: 15px;
+				}
+			}
+			.filter__apply{
+				display: flex;
+				align-items: center;
+				grid-gap: 10px;
+				width: 100%;
+				margin-top: 15px;
+			}
+			.topbar__sorting{
+				display: none;
+			}
+		}
+	}
+	.topbar__sorting{
+		position: relative;
+		&-list{
+			display: none;
+			width: 100%;
+			background: #F1F1F1;
+			border-radius: 0px 5px 5px 5px;
+			padding: 5px 20px 15px;
+			position: absolute;
+			left: 0;
+			z-index: 1;
+			a{
+				display: block;
+				margin-bottom: 15px;
+				font-size: 16px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				svg{
+					margin-left: 14px;
+				}
+			}			
+		}
+	}
+	@media (max-width: 768px) {
+		.topbar__filter{
+			.filter__section{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100vw;
+				height: 100vh;
+				z-index: 11;
+				background-color: #fff;
+			}
+			.filter__section-inner{
+				align-items: flex-start;
+				flex-direction: column;
+				.filter__apply{
+					order: -1;
+					margin-top: 0;
+					margin-bottom: 15px;
+					height: 60px;
+					justify-content: space-between;
+				}
+				.checkbox__group{
+					width: 100%;
+					padding-right: 0;
+					flex: 0 0 auto;
+					padding: 15px;
+					background: rgba(49, 52, 62, 0.07);
+					border-radius: 5px;
+					margin-bottom: 5px;
+					.title{
+						margin-bottom: 0;
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						&::after{
+							content:"";
+							background: url('../images/icons/select.svg') right center no-repeat;
+							width: 10px;
+							height: 7px;
+						}
+						&.active{
+							&::after{
+								transform: rotate(180deg);
+							}
+						}
+					}
+					.checkbox__group-list{
+						display: none;
+						padding-top: 15px;
+					}
+				}
+				.topbar__sorting{
+					display: block;
+					width: 100%;
+					margin-bottom: 5px;
+					.btn-sorting{
+						width: 100%;
+						padding: 15px;
+						font-weight: bold;
+						font-size: 18px;
+						line-height: 1.4;
+						color: #31343E;
+						font-family: 'Yanone Kaffeesatz', sans-serif;
+					}
+					&-list{
+						display: none;
+						width: 100%;
+						background: #F1F1F1;
+						border-radius: 0px 5px 5px 5px;
+						padding: 15px;
+						position: relative;
+					}
+				}
+			}
+		}
+		.topbar__sorting{
+			display: none;
+		}
+	}
+}
+.pagination{
+	margin: 50px auto;
+	.load__more{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 34px;
+	}
+	.pagination__pages{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		grid-gap: 64px;
+		a, span{
+			display: block;
+			font-size: 14px;
+			line-height: 18px
+		}
+		span{
+			color: rgba(49, 52, 62, 0.3);
+		}
+		a.prev{
+			margin-right: 55px;
+		}
+		a.next{
+			margin-left: 55px;
+		}
+		.pages{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			grid-gap: 15px;
+		}
+	}
+	@media (max-width: 768px) {
+		.pagination__pages{
+			grid-gap: 15px;
+			justify-content: space-between;
+			a.prev{
+				margin-right: 0;
+			}
+			a.next{
+				margin-left: 0;
+			}
+		}
+	}
+}
