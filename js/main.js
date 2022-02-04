@@ -11,7 +11,6 @@ window.addEventListener('load', function(){
 		});	
 	}, 200);
 });
-
 $(document).ready(function () {
 	toggleSearchMobile($(window).width());
 	slideCheckboxMobile($(window).width());
@@ -20,12 +19,11 @@ $(document).ready(function () {
 	popupInitialize();
 	menuDesktopToggle();
 	menuMobileToggle();
+	productDetailSlider();
 
 	$('.search__btn').click(function(){
 		$('.search').slideToggle();
 	});
-
-
 	$('.topbar__filter .btn-filter').click(function(){
 		$(this).parent().find('.filter__section').slideToggle();
 	});
@@ -150,4 +148,23 @@ function slideCheckboxMobile(widthScreen){
 			$(this).parent().find('.checkbox__group-list').slideToggle();
 		});
 	}
+}
+function productDetailSlider(){
+	$('.product__detail .big__images-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
+		asNavFor: '.small__images-slider'
+	});
+	$('.product__detail .small__images-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.big__images-slider',
+		dots: false,
+		arrows: true,
+		centerMode: false,
+		infinite: true,
+		focusOnSelect: true
+	});
 }

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>Kidwiser</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet"> 
+	<link href="./css/preloader.css" rel="stylesheet">
+	<script>
+		window.addEventListener('load', function(){
+			setTimeout(function () {
+				$('.pre-loader').fadeOut();
+			}, 180);
+			setTimeout(function () {
+				document.querySelector('body').classList.remove("overflowed");
+			}, 600);
+		});
+	</script>
+</head>
+<body class="overflowed">
+	<div class="pre-loader">
+		<img src="./images/icons/logo-small.png" alt="">
+	</div>
+	<header class="header">
+		<div class="inner">
+			<div class="logo hasAnimation" data-animate="animate__fadeInLeft">
+				<a href="/"><img src="./images/icons/logo-small.png" alt=""></a>
+			</div>
+			<div class="menu">
+				<ul class="lvl_1 hasAnimation" data-animate="animate__fadeInDown">
+					<li><a href="./catalog.html" class="has_child active" data-menu="catalog__submenu">Каталог</a></li>
+					<li><a href="">О компании</a></li>
+					<li><a href="">Доставка и оплата</a></li>
+					<li><a href="">Поддержка</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+				
+				<div class="submenu" id="catalog__submenu">
+					<div class="inner">
+						<div class="empty"></div>
+						<div class="menu">
+							<ul class="lvl_2">
+								<li><a href="" class="has_child" data-menu="collection">Коллекция</a></li>
+								<li><a href="" class="has_child" data-menu="ages">Возраст</a></li>
+								<li><a href="">Цена</a></li>
+								<li><a href="">Подборки</a></li>
+							</ul>					
+							<ul class="lvl_3" id="ages">
+								<li><a href="">1+</a></li>
+								<li><a href="">3+</a></li>
+								<li><a href="">6+</a></li>
+								<li><a href="">9+</a></li>
+								<li><a href="">12+</a></li>
+							</ul>				
+							<ul class="lvl_3" id="collection">
+								<li><a href="">Коллекция 1</a></li>
+								<li><a href="">Коллекция 2</a></li>
+								<li><a href="">Коллекция 3</a></li>
+							</ul>
+						</div>
+						<div class="empty"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tools hasAnimation" data-animate="animate__fadeInRight">
+				<button class="search__btn">
+					<img src="./images/icons/search.svg" alt="search">
+				</button>
+				<button class="busket">
+					<img src="./images/icons/busket.svg" alt="">
+					<div class="count">7</div>
+				</button>				
+				<div class="hamburger__menu">
+					<input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" autocomplete="off">
+					<label for="checkbox4">
+							<div class="hamburger hamburger4">
+									<span class="bar bar1"></span>
+									<span class="bar bar2"></span>
+									<span class="bar bar3"></span>
+									<span class="bar bar4"></span>
+									<span class="bar bar5"></span>
+							</div>
+					</label>
+				</div>
+			</div>
+			<div class="search">
+				<form action="">
+					<input type="text" placeholder="Поиск...">
+					<input type="submit" value="">
+				</form>
+			</div>			
+			<div class="popup menu__popup" id="menu_lvl_1">
+				<div class="popup__inner">
+					<div class="popup__content animate__animated" data-animatedin="animate__fadeInRight">
+						<button class="back__menu"><img src="./images/icons/has__child.svg"> Меню</button>						
+						<ul class="lvl_2">
+							<li><a href="" class="has_child" data-menu="collection">Коллекция</a></li>
+							<li><a href="" class="has_child" data-menu="ages">Возраст</a></li>
+							<li><a href="">Цена</a></li>
+							<li><a href="">Подборки</a></li>
+						</ul>
+						<ul class="lvl_3 animate__animated animate__fadeInRight" id="ages">
+							<li><a href="">1+</a></li>
+							<li><a href="">3+</a></li>
+							<li><a href="">6+</a></li>
+							<li><a href="">9+</a></li>
+							<li><a href="">12+</a></li>
+						</ul>				
+						<ul class="lvl_3 animate__animated animate__fadeInRight" id="collection">
+							<li><a href="">Коллекция 1</a></li>
+							<li><a href="">Коллекция 2</a></li>
+							<li><a href="">Коллекция 3</a></li>
+						</ul>
+						<ul class="lvl_1">
+							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__catalog"></use></svg> Каталог</a></li>
+							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__busket"></use></svg> Корзина (0)</a></li>
+							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__delivery"></use></svg> Доставка и оплата</a></li>
+							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__about"></use></svg> О Kidwiser</a></li>
+							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__blog"></use></svg> Блог</a></li>
+							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__contacts"></use></svg> Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="breadcrumb inner hasAnimation" data-animate="animate__fadeInDown">
+		<a href="">Каталог</a>
+		<span><i>></i>6+</span>
+	</div>
+	<div class="inner">
+		<div class="product__detail">
+			<div class="product_detail-images">
+				<div class="big__images-slider">
+					<div><img src="./images/content/img_6.jpg" alt=""></div>
+					<div><img src="./images/content/img_6.jpg" alt=""></div>
+					<div><img src="./images/content/img_6.jpg" alt=""></div>
+					<div><img src="./images/content/img_6.jpg" alt=""></div>
+					<div><img src="./images/content/img_6.jpg" alt=""></div>
+					<div><img src="./images/content/img_6.jpg" alt=""></div>
+				</div>
+				<div class="small__images-slider">
+					<div><img src="./images/content/img_7.jpg" alt=""></div>
+					<div><img src="./images/content/img_7.jpg" alt=""></div>
+					<div><img src="./images/content/img_7.jpg" alt=""></div>
+					<div><img src="./images/content/img_7.jpg" alt=""></div>
+					<div><img src="./images/content/img_7.jpg" alt=""></div>
+					<div><img src="./images/content/img_7.jpg" alt=""></div>
+				</div>
+			</div>
+			<div class="product__detail-content">
+				asd
+			</div>
+		</div>
+		<div class="product__list product__list-slider hasAnimation" data-animate="animate__zoomIn">
+			<h2 class="title colspan_4">Рекомендации для вас</h2>
+			<div class="slider">
+				<div class="item">
+					<a href="" class="img"><img src="./images/content/img_1.jpg" alt=""></a>
+					<a href="" class="name">Игрушка короткий заголовок</a>
+					<div class="price">
+						<div class="current">1530 ₽</div>
+						<div class="old">2000 ₽ </div>
+					</div>
+					<div class="rating">
+						<div class="stars">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+						</div>
+						<div class="number">15</div>
+					</div>
+					<a href="" class="btn busket"><img src="./images/icons/busket.svg" alt=""> В корзину</a>
+				</div>
+				<div class="item">
+					<a href="" class="img"><img src="./images/content/img_1.jpg" alt=""></a>
+					<a href="" class="name">Игрушка короткий заголовок</a>
+					<div class="price">
+						<div class="current">1530 ₽</div>
+						<div class="old">2000 ₽ </div>
+					</div>
+					<div class="rating">
+						<div class="stars">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+						</div>
+						<div class="number">15</div>
+					</div>
+					<a href="" class="btn busket"><img src="./images/icons/busket.svg" alt=""> В корзину</a>
+				</div>
+				<div class="item">
+					<a href="" class="img"><img src="./images/content/img_1.jpg" alt=""></a>
+					<a href="" class="name">Игрушка короткий заголовок</a>
+					<div class="price">
+						<div class="current">1530 ₽</div>
+						<div class="old">2000 ₽ </div>
+					</div>
+					<div class="rating">
+						<div class="stars">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+						</div>
+						<div class="number">15</div>
+					</div>
+					<a href="" class="btn busket"><img src="./images/icons/busket.svg" alt=""> В корзину</a>
+				</div>
+				<div class="item">
+					<a href="" class="img"><img src="./images/content/img_1.jpg" alt=""></a>
+					<a href="" class="name">Игрушка короткий заголовок</a>
+					<div class="price">
+						<div class="current">1530 ₽</div>
+						<div class="old">2000 ₽ </div>
+					</div>
+					<div class="rating">
+						<div class="stars">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+						</div>
+						<div class="number">15</div>
+					</div>
+					<a href="" class="btn busket"><img src="./images/icons/busket.svg" alt=""> В корзину</a>
+				</div>
+				<div class="item">
+					<a href="" class="img"><img src="./images/content/img_1.jpg" alt=""></a>
+					<a href="" class="name">Игрушка короткий заголовок</a>
+					<div class="price">
+						<div class="current">1530 ₽</div>
+						<div class="old">2000 ₽ </div>
+					</div>
+					<div class="rating">
+						<div class="stars">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+							<img src="./images/icons/star.svg" alt="">
+						</div>
+						<div class="number">15</div>
+					</div>
+					<a href="" class="btn busket"><img src="./images/icons/busket.svg" alt=""> В корзину</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="inner hasAnimation" data-animate="animate__fadeInUp">
+			<div class="logo"><a href=""><img src="./images/icons/logo-footer.svg" alt=""></a></div>
+			<div class="subscribe">
+				<form action="">
+					<div class="title">Подписаться на наши новости</div>
+					<div class="field">
+						<input type="text" placeholder="mail@examlple.ru">
+						<input type="submit" value="">
+					</div>
+				</form>
+			</div>
+			<div class="colspan_1"></div>
+			<div class="socials">
+				<div class="title">Подписывайтесь на нас в соцсетях</div>
+				<a href="" class=""><img src="./images/icons/facebook.svg" alt=""></a>
+				<a href="" class=""><img src="./images/icons/instagram.svg" alt=""></a>
+				<a href="" class=""><img src="./images/icons/youtube.svg" alt=""></a>
+			</div>
+			<div class="colspan_1 colspan_catalog"></div>
+			<div class="catalog">
+				<a href="" class="btn">Каталог Kidwiser </a>
+			</div>
+			<div class="menu about">
+				<a href="" class="title">О компании</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+			</div>
+			<div class="menu delivery">
+				<a href="" class="title">Доставка и оплата</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+			</div>
+			<div class="menu support">
+				<a href="" class="title">Поддержка</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+			</div>
+			<div class="menu contacts">
+				<a href="" class="title">Контакты</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+				<a href="">Ссылка 1</a>
+			</div>
+			<div class="colspan_1"></div>
+			<div class="menu last_menu">
+				<a href="" class="title">Правовая информация</a>
+				<a href="">Политика конфиденциальности</a>
+				<a href="">Оферта</a>
+				<a href="">Cookies</a>
+			</div>
+			<div class="copyrights">
+				Kidwiser © 2022
+			</div>
+		</div>
+	</footer>
+	<div class="popup" id="firstPopup">
+		<div class="popup__inner">
+			<div class="popup__content animate__animated" data-animatedin="animate__fadeInDown" data-animatedout="animate__fadeOutDown">
+				<button class="popup__close close-popup">X</button>
+				<h1>Выберите тип предпринимательской деятельности:</h1>
+			</div>
+		</div>
+	</div>
+</body>
+
+<link href="./css/slick-theme.min.css" rel="stylesheet">
+<link href="./css/slick.css" rel="stylesheet">
+<link href="./css/animate.min.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/jquery.maskedinput.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/jquery.viewportchecker.js"></script>
+<script src="./js/popup.js"></script>
+<script src="./js/main.js"></script>
+</html>
