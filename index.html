@@ -10,12 +10,14 @@
 	<link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet"> 
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&family=Yanone+Kaffeesatz:wght@700&display=swap"
+		rel="stylesheet">
 
 
 	<link href="./css/preloader.css" rel="stylesheet">
 	<script>
-		window.addEventListener('load', function(){
+		window.addEventListener('load', function () {
 			setTimeout(function () {
 				$('.pre-loader').fadeOut();
 			}, 180);
@@ -26,14 +28,15 @@
 	</script>
 
 </head>
+
 <body class="overflowed">
 	<div class="pre-loader">
-		<img src="./images/icons/logo-small.png" alt="">
+		<img src="./images/icons/logo-small.svg" alt="">
 	</div>
 	<header class="header">
 		<div class="inner">
 			<div class="logo hasAnimation" data-animate="animate__fadeInLeft">
-				<a href="/"><img src="./images/icons/logo-small.png" alt=""></a>
+				<a href="/"><img src="./images/icons/logo-small.svg" alt=""></a>
 			</div>
 			<div class="menu">
 				<ul class="lvl_1 hasAnimation" data-animate="animate__fadeInDown">
@@ -43,7 +46,7 @@
 					<li><a href="">Поддержка</a></li>
 					<li><a href="">Контакты</a></li>
 				</ul>
-				
+
 				<div class="submenu" id="catalog__submenu">
 					<div class="inner">
 						<div class="empty"></div>
@@ -53,14 +56,14 @@
 								<li><a href="" class="has_child" data-menu="ages">Возраст</a></li>
 								<li><a href="">Цена</a></li>
 								<li><a href="">Подборки</a></li>
-							</ul>					
+							</ul>
 							<ul class="lvl_3" id="ages">
 								<li><a href="">1+</a></li>
 								<li><a href="">3+</a></li>
 								<li><a href="">6+</a></li>
 								<li><a href="">9+</a></li>
 								<li><a href="">12+</a></li>
-							</ul>				
+							</ul>
 							<ul class="lvl_3" id="collection">
 								<li><a href="">Коллекция 1</a></li>
 								<li><a href="">Коллекция 2</a></li>
@@ -78,17 +81,17 @@
 				<button class="busket">
 					<img src="./images/icons/busket.svg" alt="">
 					<div class="count">7</div>
-				</button>				
+				</button>
 				<div class="hamburger__menu">
 					<input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" autocomplete="off">
 					<label for="checkbox4">
-							<div class="hamburger hamburger4">
-									<span class="bar bar1"></span>
-									<span class="bar bar2"></span>
-									<span class="bar bar3"></span>
-									<span class="bar bar4"></span>
-									<span class="bar bar5"></span>
-							</div>
+						<div class="hamburger hamburger4">
+							<span class="bar bar1"></span>
+							<span class="bar bar2"></span>
+							<span class="bar bar3"></span>
+							<span class="bar bar4"></span>
+							<span class="bar bar5"></span>
+						</div>
 					</label>
 				</div>
 			</div>
@@ -97,11 +100,11 @@
 					<input type="text" placeholder="Поиск...">
 					<input type="submit" value="">
 				</form>
-			</div>			
+			</div>
 			<div class="popup menu__popup" id="menu_lvl_1">
 				<div class="popup__inner">
 					<div class="popup__content animate__animated" data-animatedin="animate__fadeInRight">
-						<button class="back__menu"><img src="./images/icons/has__child.svg"> Меню</button>						
+						<button class="back__menu"><img src="./images/icons/has__child.svg"> Меню</button>
 						<ul class="lvl_2">
 							<li><a href="" class="has_child" data-menu="collection">Коллекция</a></li>
 							<li><a href="" class="has_child" data-menu="ages">Возраст</a></li>
@@ -114,37 +117,49 @@
 							<li><a href="">6+</a></li>
 							<li><a href="">9+</a></li>
 							<li><a href="">12+</a></li>
-						</ul>				
+						</ul>
 						<ul class="lvl_3 animate__animated animate__fadeInRight" id="collection">
 							<li><a href="">Коллекция 1</a></li>
 							<li><a href="">Коллекция 2</a></li>
 							<li><a href="">Коллекция 3</a></li>
 						</ul>
 						<ul class="lvl_1">
-							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__catalog"></use></svg> Каталог</a></li>
-							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__busket"></use></svg> Корзина (0)</a></li>
-							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__delivery"></use></svg> Доставка и оплата</a></li>
-							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__about"></use></svg> О Kidwiser</a></li>
-							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__blog"></use></svg> Блог</a></li>
-							<li><a href=""><svg height="24" width="24"><use xlink:href="./images/icons/icons.svg#menu__contacts"></use></svg> Контакты</a></li>
+							<li><a href=""><svg height="24" width="24">
+										<use xlink:href="./images/icons/icons.svg#menu__catalog"></use>
+									</svg> Каталог</a></li>
+							<li><a href=""><svg height="24" width="24">
+										<use xlink:href="./images/icons/icons.svg#menu__busket"></use>
+									</svg> Корзина (0)</a></li>
+							<li><a href=""><svg height="24" width="24">
+										<use xlink:href="./images/icons/icons.svg#menu__delivery"></use>
+									</svg> Доставка и оплата</a></li>
+							<li><a href=""><svg height="24" width="24">
+										<use xlink:href="./images/icons/icons.svg#menu__about"></use>
+									</svg> О Kidwiser</a></li>
+							<li><a href=""><svg height="24" width="24">
+										<use xlink:href="./images/icons/icons.svg#menu__blog"></use>
+									</svg> Блог</a></li>
+							<li><a href=""><svg height="24" width="24">
+										<use xlink:href="./images/icons/icons.svg#menu__contacts"></use>
+									</svg> Контакты</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>	
+	</header>
 	<div class="sale hasAnimation" data-animate="animate__fadeInDown">
 		SALE / февраль-март 2023
 	</div>
 	<div class="inner">
-		<div class="intro__bnr hasAnimation" data-animate="animate__zoomIn">
+		<div class="intro__bnr ">
 			<div class="intro__bnr-inner">
 				<h1 class="title">Баннер короткий заголовок</h1>
 				<h4 class="subtitle">Баннер короткий подзаголовок в несколько строк</h4>
 				<a href="#" class="btn">Начать покупки</a>
 			</div>
 		</div>
-		<div class="search__section hasAnimation" data-animate="animate__zoomIn">
+		<div class="search__section ">
 			<h2 class="title">Поисковик подарка</h2>
 			<form action="" class="form">
 				<div class="field">
@@ -166,7 +181,7 @@
 				<input type="submit" value="Найти">
 			</form>
 		</div>
-		<div class="product__list grid_4c hasAnimation" data-animate="animate__zoomIn">
+		<div class="product__list grid_4c ">
 			<div class="item">
 				<a href="" class="img"><img src="./images/content/img_1.jpg" alt=""></a>
 				<a href="" class="name">Игрушка короткий заголовок</a>
@@ -320,7 +335,7 @@
 				<a href="" class="btn busket"><img src="./images/icons/busket.svg" alt=""> В корзину</a>
 			</div>
 		</div>
-		<div class="product__list product__list-slider hasAnimation" data-animate="animate__zoomIn">
+		<div class="product__list product__list-slider ">
 			<h2 class="title colspan_4">Рекомендации для вас</h2>
 			<div class="slider">
 				<div class="item">
@@ -420,7 +435,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="product__list trands-slider hasAnimation" data-animate="animate__zoomIn">
+		<div class="product__list trands-slider ">
 			<h2 class="title colspan_4">Тренды</h2>
 			<div class="slider">
 				<div class="item">
@@ -443,16 +458,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="content__bnr hasAnimation" data-animate="animate__zoomIn">
-			<img 
-				srcset="./images/content/img_4.jpg 375w,
+		<div class="content__bnr ">
+			<img srcset="./images/content/img_4.jpg 375w,
 								./images/content/img_4.jpg 768w,
-								./images/content/img_3.jpg 1920w"
-				sizes="(max-width: 375px) 375px,
+								./images/content/img_3.jpg 1920w" sizes="(max-width: 375px) 375px,
 							 (max-width: 768px) 768px
-							"
-		 src="./images/content/img_3.jpg"
-		 >
+							" src="./images/content/img_3.jpg">
 			<div class="content__bnr-inner">
 				<h2 class="title">Баннер короткий заголовок</h2>
 				<h4 class="subtitle">Баннер короткий подзаголовок в несколько строк</h4>
@@ -521,7 +532,8 @@
 	</footer>
 	<div class="popup" id="firstPopup">
 		<div class="popup__inner">
-			<div class="popup__content animate__animated" data-animatedin="animate__fadeInDown" data-animatedout="animate__fadeOutDown">
+			<div class="popup__content animate__animated" data-animatedin="animate__fadeInDown"
+				data-animatedout="animate__fadeOutDown">
 				<button class="popup__close close-popup">X</button>
 				<h1>Выберите тип предпринимательской деятельности:</h1>
 			</div>
@@ -541,4 +553,5 @@
 <script src="./js/jquery.viewportchecker.js"></script>
 <script src="./js/popup.js"></script>
 <script src="./js/main.js"></script>
+
 </html>

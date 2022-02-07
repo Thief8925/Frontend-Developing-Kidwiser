@@ -25,10 +25,16 @@ $(document).ready(function () {
 		$('.search').slideToggle();
 	});
 	$('.topbar__filter .btn-filter').click(function(){
+		$(this).toggleClass('active');
 		$(this).parent().find('.filter__section').slideToggle();
 	});
 	$('.topbar__sorting .btn-sorting').click(function(){
+		$(this).toggleClass('active');
 		$(this).parent().find('.topbar__sorting-list').slideToggle();
+	});
+	$('.tabs__list .head').click(function(){
+		$(this).toggleClass('active');
+		$(this).parent().find('.body').slideToggle();
 	});
 	
 });

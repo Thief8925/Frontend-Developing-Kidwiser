@@ -173,6 +173,10 @@
 				align-items: center;
 				justify-content: flex-end;
 				margin-bottom: 15px;
+				.btn{
+					width: auto;
+					font-size: 14px;
+				}
 			}
 			.subscribe{
 				grid-column:  span 12 / auto;
