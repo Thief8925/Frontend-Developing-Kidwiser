@@ -64,4 +64,16 @@
 		<path d="M16.5 22.0007L20.1667 25.6673L27.5 18.334" stroke="#31343E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M22.0001 5.5C26.2825 9.28872 31.8716 11.2614 37.5834 11C38.415 13.8289 38.6695 16.796 38.3317 19.7252C37.9939 22.6543 37.0707 25.4857 35.617 28.051C34.1633 30.6163 32.2088 32.8632 29.8696 34.6582C27.5304 36.4532 24.8542 37.7597 22.0001 38.5C19.146 37.7597 16.4698 36.4532 14.1306 34.6582C11.7914 32.8632 9.83687 30.6163 8.3832 28.051C6.92952 25.4857 6.00635 22.6543 5.66854 19.7252C5.33073 16.796 5.58518 13.8289 6.41677 11C12.1286 11.2614 17.7177 9.28872 22.0001 5.5" stroke="#31343E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol id="cart-trash" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M4 7H20" stroke="#31343E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M10 11V17" stroke="#31343E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M14 11V17" stroke="#31343E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M5 7L6 19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19L19 7" stroke="#31343E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M9 7V4C9 3.73478 9.10536 3.48043 9.29289 3.29289C9.48043 3.10536 9.73478 3 10 3H14C14.2652 3 14.5196 3.10536 14.7071 3.29289C14.8946 3.48043 15 3.73478 15 4V7" stroke="#31343E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+	<symbol id="success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#80D0AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M9 12L11 14L15 10" stroke="#80D0AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+
 </svg>
