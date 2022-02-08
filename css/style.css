@@ -2059,6 +2059,7 @@ a, button, input {
   width: 80px;
   height: 80px;
   margin-right: 20px;
+  min-width: 80px;
 }
 
 .cart .list .item .img img {
@@ -2103,6 +2104,7 @@ a, button, input {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
+  max-width: 100px;
 }
 
 .cart .list .item .count button {
@@ -2113,6 +2115,10 @@ a, button, input {
   font-size: 20px;
   line-height: 1;
   font-family: serif;
+}
+
+.cart .list .item .count button:hover {
+  opacity: 0.8;
 }
 
 .cart .list .item .count input {
@@ -2179,6 +2185,75 @@ a, button, input {
 
 .cart .promocode__success svg {
   margin-left: 25px;
+  min-width: 24px;
+}
+
+@media (max-width: 992px) {
+  .cart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart .list {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .cart .list .heading {
+    font-size: 18px;
+  }
+  .cart .list .item .wrapper {
+    margin-right: 15px;
+  }
+  .cart .list .item .name {
+    font-size: 14px;
+  }
+  .cart .list .item .price {
+    font-size: 14px;
+  }
+  .cart .promocode {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .cart .promocode__form .heading {
+    margin-bottom: 15px;
+  }
+  .cart .promocode__form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 15px;
+  }
+  .cart .promocode__form input[type="submit"] {
+    height: 48px;
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart .list .item .wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .cart .list .item .name, .cart .list .item .price {
+    grid-column: 4 span / auto;
+    margin-bottom: 10px;
+  }
+  .cart .list .item .count {
+    grid-row: 4 span / auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cart .promocode__form form {
+    display: block;
+  }
+  .cart .promocode__form input[type="submit"] {
+    height: 38px;
+    max-width: 100%;
+  }
 }
 
 .footer {

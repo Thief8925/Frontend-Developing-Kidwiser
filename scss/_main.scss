@@ -935,6 +935,7 @@
 				width: 80px;
 				height: 80px;
 				margin-right: 20px;
+				min-width:80px;
 				img{
 					width: 100%;
 					height: 100%;
@@ -963,6 +964,7 @@
 				align-items: center;
 				justify-content: flex-end;
 				width: 100%;
+				max-width: 100px;
 				button{
 					width: 30px;
 					height: 30px;
@@ -971,6 +973,9 @@
 					font-size: 20px;
 					line-height: 1;
 					font-family: serif;
+					&:hover{
+						opacity: 0.8;
+					}
 				}
 				input{
 					flex: 1 0 auto;
@@ -1023,6 +1028,74 @@
 			color: #80D0AD;
 			svg{
 				margin-left: 25px;
+				min-width: 24px;
+			}
+		}
+	}
+	@media (max-width: 992px) {
+		flex-direction: column;
+		.list{
+			margin-right: 0;
+			max-width: 100%;
+			.heading{
+				font-size: 18px;
+			}
+			.item{
+				.wrapper{
+					margin-right: 15px;
+				}
+				.name{
+					font-size: 14px;
+				}
+				.price{
+					font-size: 14px;
+				}
+			}
+		}
+		.promocode{
+			width: 100%;
+			max-width: 100%;
+			margin-top: 10px;
+			&__form{
+				.heading{
+					margin-bottom: 15px;
+				}
+				form{
+					display: flex;
+					grid-gap: 15px;
+				}
+				input[type="submit"]{
+					height: 48px;
+					max-width: 210px;
+				}
+			}
+		}
+	}
+	@media (max-width: 576px ) {
+		.list{
+			.item{
+				.wrapper{
+					flex: 1 1 auto;
+				}
+				.name, .price{
+					grid-column: 4 span / auto;
+					margin-bottom: 10px;
+				}
+				.count{
+					grid-row: 4 span / auto;
+					order:2;
+				}
+			}
+		}
+		.promocode{
+			&__form{
+				form{
+					display: block;
+				}
+				input[type="submit"]{
+					height: 38px;
+					max-width: 100%;
+				}
 			}
 		}
 	}
