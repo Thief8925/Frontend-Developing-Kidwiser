@@ -1225,3 +1225,40 @@
 		}
 	}
 }
+.content__section{
+	margin: 50px 0 70px;
+	h1, h2, h3, h4{
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	h1{
+		font-size: 24px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 16px;
+	}
+	h4{
+		font-size: 14px;
+	}
+	ul, ol{
+		margin-left: 15px;
+		padding-left: 15px;
+	}
+	p{
+		margin-bottom: 15px;
+	}
+	@media (max-width: 768px) {		
+		h1{
+			font-size: 18px;
+		}
+		h2{
+			font-size: 16px;
+		}
+		h3{
+			font-size: 14px;
+		}
+	}
+}

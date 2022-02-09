@@ -75,5 +75,21 @@
 		<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#80D0AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M9 12L11 14L15 10" stroke="#80D0AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
-
+	<symbol id="close" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect x="1.41406" width="16" height="2" rx="1" transform="rotate(45 1.41406 0)" fill="#31343E"/>
+		<rect x="12.728" y="1.41406" width="16" height="2" rx="1" transform="rotate(135 12.728 1.41406)" fill="#31343E"/>
+	</symbol>
+	<symbol id="success-image" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect opacity="0.12" width="90" height="90" rx="15" fill="#DE8F9E"/>
+		<path d="M27 29.25H31.5" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M29.25 27V31.5" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M43.875 27L42.75 31.5" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M58.5 29.25H63" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M60.75 27V31.5" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M51.75 38.25L49.5 40.5" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M58.5 47.25L63 46.125" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M58.5 60.75H63" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M60.75 58.5V63" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M49.4998 55.1655L34.8343 40.5L24.9568 62.055C24.7657 62.4735 24.7071 62.9404 24.7888 63.3931C24.8705 63.8459 25.0886 64.2629 25.4139 64.5882C25.7392 64.9135 26.1562 65.1316 26.6089 65.2133C27.0617 65.295 27.5286 65.2363 27.9471 65.0453L49.4998 55.1677V55.1655Z" stroke="#DE8F9E" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 </svg>
