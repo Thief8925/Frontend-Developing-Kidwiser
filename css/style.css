@@ -2476,6 +2476,28 @@ a, button, input {
   }
 }
 
+.success__section {
+  margin: 50px auto;
+  max-width: 290px;
+  border-radius: 5px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.success__section svg {
+  margin-bottom: 30px;
+}
+
+.success__section h1 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.success__section .btn {
+  margin-top: 40px;
+}
+
 .footer {
   padding: 30px 0;
   background: #31343E;
