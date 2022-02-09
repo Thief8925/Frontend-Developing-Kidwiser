@@ -22,6 +22,9 @@ $(document).ready(function () {
 	productDetailSlider();
 	setCountProducts();
 
+	/* Phone validation */
+	$(".validate_as_phone").mask("+7 (999) 999-9999");
+
 	$('.search__btn').click(function(){
 		$('.search').slideToggle();
 	});

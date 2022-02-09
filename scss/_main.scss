@@ -286,6 +286,12 @@
 	.colspan_4{
 		grid-column:  span 4 / auto;
 	}
+	.colspan_2{
+		grid-column:  span 2 / auto;
+	}
+	.rowspan_2{
+		grid-row:  span 2 / auto;
+	}
 	@media (max-width: 992px) {
 		grid-template-columns: repeat(3,1fr);
 		grid-gap: 30px;
@@ -296,6 +302,11 @@
 	@media (max-width: 375px) {
 		grid-gap: 10px 20px;
 	}
+}
+.grid_2c{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 20px 30px;
 }
 .product__list-slider, .trands-slider{
 	.item{
@@ -1097,6 +1108,120 @@
 					max-width: 100%;
 				}
 			}
+		}
+	}
+}
+.checkout{
+	margin: 40px 0 50px;
+	grid-gap: 20px 30px;
+	label{
+		font-weight: bold;
+		margin-bottom: 5px;
+		display: block;
+		&.container__radio{
+			margin-bottom: 0;
+		}
+	}
+	input[type="text"], input[type="email"], textarea{
+		width: 100%;
+	}
+	.heading{
+		font-weight: bold;
+		font-size: 22px;
+	}
+	.radio_btns{
+		display: flex;
+		grid-gap: 10px 44px;
+		flex-wrap: wrap;
+		margin: 20px 0;
+		.heading{
+			width: 100%;
+		}
+	}
+	.delivery-info{
+		font-size: 22px;
+		margin: 10px 0;
+		b{
+			display: block;
+		}
+	}
+	.map{
+		border-radius: 5px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		iframe{
+			width: 100%;
+		}
+	}
+	.check__info{
+		background: rgba(225, 113, 88, 0.1);
+		border-radius: 5px;
+		padding: 15px 20px;
+		font-weight: bold;
+		font-size: 16px;
+		color: #E17158;
+		margin: 10px 0;
+		p{
+			margin-bottom: 10px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.additional__info{
+		margin-top: 31px;
+	}
+	@media (max-width: 992px) {
+		grid-template-columns: repeat(4, 1fr);
+		.heading{
+			font-size: 18px;
+		}
+		.name, .surname, .email, .phone{
+			order:1;
+		}
+		.radio_btns{
+			order: 5;
+		}
+		.city{
+			order:6;
+			grid-column: 4 span / auto;
+		}
+		.adress{
+			order:7;
+			grid-column: 4 span / auto;
+		}
+		.additional__info{
+			grid-column: 4 span / auto;
+			order: 8;
+			margin-top: 0;
+		}
+		.delivery-info{
+			order: 9;
+			font-size: 18px;
+		}
+		.map{
+			order: 10;
+		}
+		.check__info{
+			order: 11;
+			font-size: 14px;
+		}
+		.delimetr{
+			order: 12;
+		}
+		.submit{
+			order: 13;
+		}
+	}
+	@media (max-width: 576px) {
+		.name, .surname, .email, .phone, .check__info{
+			grid-column:4 span / auto;
+		}
+		.delimetr{
+			display: none;
+		}
+		.submit{
+			grid-column:4 span / auto;
 		}
 	}
 }
