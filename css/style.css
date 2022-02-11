@@ -2257,6 +2257,10 @@ a, button, input {
   margin-bottom: 30px;
 }
 
+.cart .sidebar__checkout .action .summary {
+  display: none;
+}
+
 .cart .sidebar__checkout .buy__with {
   font-size: 16px;
   display: -webkit-box;
@@ -2392,14 +2396,36 @@ a, button, input {
     -webkit-box-shadow: 0px 0px 15px rgba(167, 179, 186, 0.6);
             box-shadow: 0px 0px 15px rgba(167, 179, 186, 0.6);
     margin: 0 -15px;
-    padding: 10px 15px;
+    padding: 0;
   }
   .cart .sidebar__checkout .action, .cart .sidebar__checkout .buy__with {
+    padding: 10px 15px;
     width: 50%;
   }
   .cart .sidebar__checkout .action {
     margin-bottom: 0;
-    border-left: 1px solid rgba(49, 52, 62, 0.7);
+    border-left: 1px solid #F0F1F1;
+    max-width: 50%;
+  }
+  .cart .sidebar__checkout .action .summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .cart .sidebar__checkout .action .summary .value {
+    font-weight: bold;
+  }
+  .cart .sidebar__checkout .action .btn {
+    max-width: 140px;
+    padding: 10px;
   }
   .cart .sidebar__checkout .buy__with {
     -ms-flex-wrap: wrap;
@@ -2408,6 +2434,7 @@ a, button, input {
   .cart .sidebar__checkout .buy__with div {
     margin-bottom: 14px;
     margin-right: 0;
+    width: 100%;
   }
   .cart .sidebar__checkout .buy__with div br {
     display: none;

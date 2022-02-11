@@ -1078,6 +1078,9 @@
 		.action{
 			max-width: 160px;
 			margin-bottom: 30px;
+			.summary{
+				display: none;
+			}
 		}
 		.buy__with{
 			font-size: 16px;
@@ -1186,19 +1189,36 @@
 			margin-bottom: 0;
 			box-shadow: 0px 0px 15px rgba(167, 179, 186, 0.6);
 			margin: 0 -15px;
-			padding: 10px 15px;
+			padding: 0;
 			.action, .buy__with{
+				padding: 10px 15px;
 				width: 50%;
 			}
 			.action{
 				margin-bottom: 0;
-				border-left: 1px solid rgba(49, 52, 62, 0.7);
+				border-left: 1px solid #F0F1F1;
+				max-width: 50%;
+				.summary{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					font-size: 12px;
+					margin-bottom: 15px;
+					.value{
+						font-weight: bold;
+					}
+				}
+				.btn{
+					max-width: 140px;
+					padding: 10px;
+				}
 			}
 			.buy__with{
 				flex-wrap: wrap;
 				div{
 					margin-bottom: 14px;
 					margin-right: 0;
+					width: 100%;
 					br{
 						display: none;
 					}
