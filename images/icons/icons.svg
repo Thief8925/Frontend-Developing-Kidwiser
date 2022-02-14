@@ -99,5 +99,15 @@
 	<symbol id="telegram" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M16.875 10.834L12.375 15.1673L19.125 21.6673L23.625 4.33398L3.375 11.9173L7.875 14.084L10.125 20.584L13.5 16.2507" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol id="breadcrumb" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.591797 1L3.1836 3.5918L0.591797 6.18361" stroke="#31343E" stroke-linecap="round"/>
+	</symbol>
+	<symbol id="minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect width="12" height="2" rx="1" fill="#31343E"/>
+	</symbol>
+	<symbol id="plus" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect y="5" width="12" height="2" rx="1" fill="#31343E"/>
+		<rect x="7" width="12" height="2" rx="1" transform="rotate(90 7 0)" fill="#31343E"/>
+	</symbol
 
 </svg>

@@ -449,6 +449,11 @@ body {
   }
 }
 
+.wrapper {
+  min-height: calc(100vh - 555px);
+  position: relative;
+}
+
 .hidden {
   opacity: 0;
 }
@@ -800,7 +805,7 @@ a, button, input {
 
 .sale {
   padding: 9px 15px;
-  background: #de8f9e10;
+  background: #de8f9e20;
   font-family: Yanone Kaffeesatz;
   font-weight: 700;
   font-size: 16px;
@@ -1354,7 +1359,7 @@ a, button, input {
   color: rgba(49, 52, 62, 0.3);
 }
 
-.breadcrumb a, .breadcrumb i {
+.breadcrumb a, .breadcrumb svg {
   margin-right: 10px;
 }
 
@@ -1691,9 +1696,11 @@ a, button, input {
 }
 
 .product__detail .product_detail-images .small__images-slider .slick-prev, .product__detail .product_detail-images .small__images-slider .slick-next {
-  background: url("../images/icons/has__child.svg") 0 0 no-repeat;
-  width: 7px;
-  height: 10px;
+  background: url("../images/icons/has__child.svg") center center no-repeat;
+  background-size: 7px 10px;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
@@ -2086,7 +2093,7 @@ a, button, input {
      object-fit: cover;
 }
 
-.cart .list .item .wrapper {
+.cart .list .item .item__wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -2463,6 +2470,7 @@ a, button, input {
 .checkout .heading {
   font-weight: bold;
   font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .checkout .radio_btns {
@@ -2645,11 +2653,20 @@ a, button, input {
 }
 
 .success__section {
-  margin: 50px auto;
-  max-width: 290px;
   border-radius: 5px;
-  padding-top: 40px;
   text-align: center;
+  height: calc(100vh - 555px);
+  min-height: 410px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .success__section svg {
@@ -2667,11 +2684,20 @@ a, button, input {
 }
 
 .section__404 {
-  margin: 50px auto;
-  max-width: 450px;
   border-radius: 5px;
-  padding-top: 40px;
   text-align: center;
+  height: calc(100vh - 555px);
+  min-height: 410px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section__404 img {
@@ -2808,6 +2834,7 @@ a, button, input {
 }
 
 .footer .inner .socials {
+  margin-top: 25px;
   grid-column: span 3 / auto;
 }
 

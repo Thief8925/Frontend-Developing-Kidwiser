@@ -1,6 +1,6 @@
 .sale{
 	padding: 9px 15px;
-	background: #de8f9e10;
+	background: #de8f9e20;
 	font-family: Yanone Kaffeesatz;
 	font-weight: 700;
 	font-size: 16px;
@@ -415,7 +415,7 @@
 	font-size: 12px;
 	line-height: 1.4;
 	color: rgba(49, 52, 62, 0.3);
-	a,i{
+	a,svg{
 		margin-right: 10px;
 	}
 	span{
@@ -662,9 +662,11 @@
 				padding: 5px;
 			}
 			.slick-prev, .slick-next{
-				background: url('../images/icons/has__child.svg') 0 0 no-repeat;
-				width: 7px;
-				height: 10px;
+				background: url('../images/icons/has__child.svg') center center no-repeat;
+				background-size: 7px 10px;
+				margin-top: -13px;
+				width: 26px;
+				height: 26px;
 				transform: translate(0,0);
 				&::before{
 					display: none;
@@ -953,7 +955,7 @@
 					object-fit: cover;
 				}
 			}
-			.wrapper{
+			.item__wrapper{
 				flex: 1 0 auto;
 				display: grid;
 				grid-template-columns: repeat(4,1fr);
@@ -1244,6 +1246,7 @@
 	.heading{
 		font-weight: bold;
 		font-size: 22px;
+		margin-bottom: 20px;
 	}
 	.radio_btns{
 		display: flex;
@@ -1379,11 +1382,14 @@
 	}
 }
 .success__section{
-	margin: 50px auto;
-	max-width: 290px;
 	border-radius: 5px;
-	padding-top: 40px;
 	text-align: center;
+	height: calc(100vh - 555px);
+	min-height: 410px;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	svg{
 		margin-bottom: 30px;
 	}
@@ -1397,11 +1403,14 @@
 	}
 }
 .section__404{
-	margin: 50px auto;
-	max-width: 450px;
 	border-radius: 5px;
-	padding-top: 40px;
 	text-align: center;
+	height: calc(100vh - 555px);
+	min-height: 410px;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	img{
 		margin-bottom: 40px;
 		max-width: 100%;
