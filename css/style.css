@@ -622,7 +622,7 @@ a, button, input {
   background: #31343E;
   font-weight: bold;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 17px;
   text-align: center;
   margin-left: 5px;
 }
@@ -1446,6 +1446,7 @@ a, button, input {
   line-height: 1.4;
   color: #31343E;
   margin-bottom: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .catalog__topbar .topbar__filter .filter__section-inner .filter__apply {
@@ -1573,7 +1574,6 @@ a, button, input {
     font-size: 18px;
     line-height: 1.4;
     color: #31343E;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
   .catalog__topbar .topbar__filter .filter__section-inner .topbar__sorting-list {
     display: none;
@@ -2152,8 +2152,10 @@ a, button, input {
   background-color: #fff;
   border: none;
   height: 30px;
-  width: 30px;
+  width: 40px;
   text-align: center;
+  min-width: 40px;
+  padding: 0;
 }
 
 .cart .promocode {
@@ -2330,7 +2332,7 @@ a, button, input {
   .cart .list .heading {
     font-size: 18px;
   }
-  .cart .list .item .wrapper {
+  .cart .list .item .item__wrapper {
     margin-right: 15px;
   }
   .cart .list .item .name {
@@ -2363,7 +2365,7 @@ a, button, input {
   .cart {
     margin-bottom: 0;
   }
-  .cart .list .item .wrapper {
+  .cart .list .item .item__wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
@@ -2445,6 +2447,14 @@ a, button, input {
   }
   .cart .sidebar__checkout .buy__with div br {
     display: none;
+  }
+  .cart .sidebar__checkout.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    background: #fff;
+    width: 100vw;
+    z-index: 11;
   }
 }
 

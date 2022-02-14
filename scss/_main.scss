@@ -473,6 +473,7 @@
 					line-height: 1.4;
 					color: #31343E;
 					margin-bottom: 15px;
+					font-family: 'Source Sans Pro', sans-serif;
 				}
 			}
 			.filter__apply{
@@ -574,7 +575,6 @@
 						font-size: 18px;
 						line-height: 1.4;
 						color: #31343E;
-						font-family: 'Yanone Kaffeesatz', sans-serif;
 					}
 					&-list{
 						display: none;
@@ -995,8 +995,10 @@
 					background-color: #fff;
 					border: none;
 					height: 30px;
-					width: 30px;
+					width: 40px;
 					text-align: center;
+					min-width: 40px;
+					padding: 0;
 				}
 			}
 		}
@@ -1125,7 +1127,7 @@
 				font-size: 18px;
 			}
 			.item{
-				.wrapper{
+				.item__wrapper{
 					margin-right: 15px;
 				}
 				.name{
@@ -1159,7 +1161,7 @@
 		margin-bottom: 0;
 		.list{
 			.item{
-				.wrapper{
+				.item__wrapper{
 					flex: 1 1 auto;
 				}
 				.name, .price{
@@ -1226,6 +1228,14 @@
 					}
 				}
 			}
+		}
+		.sidebar__checkout.fixed{
+			position: fixed;
+			bottom: 0;
+			left: 15px;
+			background: #fff;
+			width: 100vw;
+			z-index: 11;
 		}
 	}
 }

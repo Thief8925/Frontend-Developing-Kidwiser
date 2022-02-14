@@ -40,11 +40,24 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		$(this).parent().find('.body').slideToggle();
 	});
+
 	
 });
 $(window).resize(function () {
 	toggleSearchMobile($(window).width());
 	slideCheckboxMobile($(window).width());
+});
+
+let windowHeight = $(window).height();
+let documentHeight = $(document).height();
+let footerHeight = $('#footer').height();
+$(window).scroll(function() {    
+	let scroll = $(window).scrollTop();
+	if (scroll >= documentHeight - footerHeight - windowHeight) {
+		$('.sidebar__checkout').removeClass("fixed");
+	} else {
+		$('.sidebar__checkout').addClass("fixed");
+	}
 });
 
 function toggleSearchMobile(widthScreen){
