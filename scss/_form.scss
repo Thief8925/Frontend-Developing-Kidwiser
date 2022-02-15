@@ -45,7 +45,7 @@ select{
 		<span class="radiobtn"></span>
 	</label>
  */
- .container__radio {
+.container__radio {
   display: block;
   position: relative;
   padding-left: 26px;
@@ -102,7 +102,7 @@ select{
 		<span class="checkmark"></span>
 	</label>
  */
- .checkbox__container {
+.checkbox__container {
   display: block;
   position: relative;
   padding-left: 30px;
@@ -156,3 +156,68 @@ select{
 		}
 	}
 }
+
+/* Customize the select
+<div class="custom-select">
+	<select name="" id="">
+		<option value="">0 ₽ — 1000 ₽</option>
+		<option value="">1000 ₽ — 2000 ₽</option>
+	</select>
+</div>*/
+.custom-select {
+  position: relative;
+	font-weight: bold;
+	font-size: 18px;
+	width: 260px;
+	select {
+		display: none;
+	}
+	.select-selected {
+		background-color: #fff;
+		height: 48px;
+		border-radius: 5px;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 20px;
+			right: 22px;
+			display: block;
+			width: 10px;
+			height: 7px;
+			background: url("../images/icons/select.svg") 0 0 no-repeat;
+		}
+	}	
+	.select-selected.select-arrow-active {
+		border-radius: 5px 5px 0 0;
+		border: 1px solid #31343E;
+		border-bottom: none;
+		&:after {
+			border-color: transparent transparent #fff transparent;
+			top: 20px;
+		}
+	}
+	.select-items div, .select-selected {
+		color: #31343E;
+		padding: 10px 16px;
+		border: 1px solid transparent;
+		cursor: pointer;
+	}
+	.select-items {
+		position: absolute;
+		background-color: #fff;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 99;
+		border-radius: 0 0 5px 5px;
+		border: 1px solid #31343E;
+		border-top: none;
+	}
+	.select-hide {
+		display: none;
+	}
+	.select-items div:hover, .same-as-selected {
+		background-color: rgba(49, 52, 62, 0.07);
+	} 
+}
+

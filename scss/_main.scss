@@ -94,7 +94,7 @@
 		}
 		.form{
 			.field{
-				select{
+				select, .custom-select{
 					width: 230px;
 				}
 			}
@@ -138,7 +138,7 @@
 			display: none;
 			.field{
 				margin-bottom: 15px;
-				select{
+				select, .custom-select{
 					width: 100%;
 				}
 			}
