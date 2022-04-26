@@ -36,9 +36,9 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		$(this).parent().find('.topbar__sorting-list').slideToggle();
 	});
-	$('.tabs__list .head').click(function(){
-		$(this).toggleClass('active');
-		$(this).parent().find('.body').slideToggle();
+	$('.tabs__list .item').click(function(){
+		$(this).find('.head').toggleClass('active');
+		$(this).find('.body').slideToggle();
 	});
 
 	

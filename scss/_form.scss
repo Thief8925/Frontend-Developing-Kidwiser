@@ -133,15 +133,16 @@ select{
 			content: "";
 			position: absolute;
 			display: none;
-			left: 7px;
+			left: 3px;
 			top: 4px;
-			width: 5px;
-			height: 10px;
-			border: solid white;
-			border-width: 0 2px 2px 0;
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			transform: rotate(45deg);
+			width: 13px;
+			height: 11px;
+			background: url('../images/icons/checkbox.svg') 0 0 no-repeat;
+			// border: solid white;
+			// border-width: 0 2px 2px 0;
+			// -webkit-transform: rotate(45deg);
+			// -ms-transform: rotate(45deg);
+			// transform: rotate(45deg);
 		}
 	}
 	&:hover input ~ .checkmark {

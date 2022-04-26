@@ -522,6 +522,7 @@
 				height: 100vh;
 				z-index: 11;
 				background-color: #fff;
+				overflow-y: auto;
 			}
 			.filter__section-inner{
 				align-items: flex-start;
@@ -874,6 +875,7 @@
 		background: rgba(49, 52, 62, 0.07);
 		border-radius: 5px;
 		font-size: 16px;
+		cursor: pointer;
 		&.akcent__tab{
 			color: #fff;
 			background: #80D0AD;
@@ -881,9 +883,9 @@
 		.head{
 			font-weight: bold;
 			font-size: 18px;
-			margin-bottom: 20px;
 		}
 		.body{
+			margin-top: 20px;
 			img{
 				width: 100%;
 				height: auto;
@@ -1375,6 +1377,7 @@
 	ul, ol{
 		margin-left: 15px;
 		padding-left: 15px;
+		margin-bottom: 15px;
 	}
 	p{
 		margin-bottom: 15px;
