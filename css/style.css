@@ -826,18 +826,27 @@ a, button, input {
 }
 
 .intro__bnr {
-  background: url("../images/backgrounds/intro__bnr.svg") 0 0 no-repeat;
   background-size: cover;
-  padding: 5px;
   border-radius: 5px;
   margin: 30px auto;
+  height: 244px;
+  position: relative;
+}
+
+.intro__bnr img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.intro__bnr .mobile-img {
+  display: none;
 }
 
 .intro__bnr-inner {
   width: 100%;
   height: 100%;
-  min-height: 244px;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,6 +861,9 @@ a, button, input {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .intro__bnr-inner .title {
@@ -873,6 +885,18 @@ a, button, input {
 .intro__bnr-inner .btn {
   background: #8C6F9E;
   color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .intro__bnr {
+    height: 320px;
+  }
+  .intro__bnr .mobile-img {
+    display: block;
+  }
+  .intro__bnr .desktop-img {
+    display: none;
+  }
 }
 
 .search__section {
